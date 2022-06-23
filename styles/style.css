@@ -1,7 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -12,7 +8,6 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
 .header {
   height: 100vh;
   min-height: 600px;
@@ -21,12 +16,14 @@
   display:flex;
   background-color: #f2f2f2;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 .logo {
   width: 228px;
   height: 32px;
 }
-.logo__place_header {
+.logo_place_header {
   margin-top: 30px;
   z-index: 3;
   position: absolute;
@@ -64,6 +61,8 @@
   z-index: 2;
   object-fit: cover;
   position: absolute;
+  margin: 0;
+  padding: 0;
 }
 .header__square-pic {
   width: 568px;
@@ -73,6 +72,8 @@
   right: 0;
   z-index: 1;
   position: absolute;
+  margin: 0;
+  padding: 0;
 }
 .description {
   display: flex;
@@ -82,7 +83,7 @@
   display: flex;
   width: 80%;
   justify-content: space-between;
-  margin: 100px auto;
+  margin-top: 100px;
 }
 .two-columns__brief {
   width: 175px;
@@ -103,10 +104,10 @@
   font-weight: normal;
   margin-left: 0;
   margin-right: 0;
-  
-}
-.paragraph-margin {
   margin-bottom: 30px;
+}
+.two-columns__paragraph: :last-child {
+  margin-bottom: 0;
 }
 .two-columns__span-accent {
   font-weight: bold;
@@ -117,12 +118,12 @@
   align-items: center;
 }
 .section-title {
-width: 60%;
-text-align: center;
-margin-top: 100px;
-line-height: 1.15;
-font-size: 60px;
-font-weight: bold;
+  width: 60%;
+  text-align: center;
+  margin-top: 100px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
 }
 .section-subtitle {
   width: 60%;
@@ -156,14 +157,15 @@ font-weight: bold;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin-bottom: 20px;
 }
-.text-margin {
-  margin-top: 20px;
+.table__text:last-child {
+  margin-bottom: 0;
 }
 .faynman {
   display: flex;
   position: relative;
-  height: 890px;
+  min-height: 890px;
   flex-direction: column;
   align-items: center;
   background-color: #f2f2f2;
@@ -172,7 +174,6 @@ font-weight: bold;
   background-repeat: no-repeat;
   background-position: left bottom;
 }
-
 .feynman__title {
   text-align: center;
   width: 648px;
@@ -206,11 +207,6 @@ font-weight: bold;
   overflow: hidden;
 }
 .section-title_theme_dark {
-  width: 60%;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
   color: white;
   margin-top: 90px;
 }
@@ -218,11 +214,6 @@ font-weight: bold;
   color: white;
 }
 .table_theme_dark {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1100px;
-  justify-content: space-between;
-  list-style: none;
   z-index: 2;
   color: white;
   margin: 0 auto 90px;
@@ -248,6 +239,8 @@ font-weight: bold;
   display: flex;
   background-color: #1f1f1f;
   min-height: 350px;
+  margin: 0;
+  padding: 0;
 }
 .footer__columns {
   display: flex;
@@ -255,10 +248,12 @@ font-weight: bold;
   margin: 60px auto 40px;
   justify-content: space-between;
 }
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
-  flex-basis: 711px;
   flex-direction: column;
+}
+.footer__column_content_copyright {
+  flex-basis: 711px;
   justify-content: space-between;
 }
 .logo_place_foter {
@@ -272,11 +267,6 @@ font-weight: bold;
   margin-bottom: 18px;
   margin-top: 18px;
 }
-
-.footer__column_content_info {
-  display: flex;
-  flex-direction: column;
-}
 .footer__column-heading {
   color: white;
   margin-bottom: 20px;
@@ -284,31 +274,23 @@ font-weight: bold;
   font-size: 18px;
   font-weight: bold;
 }
+.footer__column-links ul li {
+  list-style: none;
+}
 .footer__column-link {
   color: white;
   text-decoration: none;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  margin-left: 10px;
 }
-.footer__column_content_socoial {
-  display: flex;
-  flex-direction: column;
+.footer__column-link: :last-child {
+  margin-bottom: 10px;
 }
 .footer__social-icon {
   width: 16px;
   height: 16px;
-}
-.footer__column-links {
-  color: white;
-  text-decoration: none;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-}
-.link-margin {
-  margin-bottom: 16px;
+  margin-right: 10px;
 }
 
 
