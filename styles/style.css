@@ -300,6 +300,8 @@
 }
 .footer__column-links {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .footer__column-link {
   color: white;
@@ -307,10 +309,6 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-}
-.footer__column-links {
-  margin: 0;
-  padding: 0;
 }
 .footer__column-links:last-child {
   margin-bottom: 10px;
