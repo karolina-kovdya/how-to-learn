@@ -7,3 +7,11 @@
     margin-bottom: 30px;
     margin-top: 0;
   }
+
+  .two-columns__paragraph:nth-child(3n) {
+    margin-bottom: 0;
+  }
+  
+  .two-columns__paragraph:nth-child(4n) {
+    margin-bottom: 0;
+  }
