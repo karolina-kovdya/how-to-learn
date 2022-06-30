@@ -2,7 +2,6 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./pages/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +10,10 @@
 <body>
   <div class="page">
     <header class="header">
-      <img class="logo logo_place_header" src="./images/logo_place_header.svg" alt="логотип Яндекс Практикум">
-      <h1 class="header__title">Научиться учиться</h1>
+      <div class="logo">
+        <img class="logo logo_place_header" src="./images/logo_place_header.svg" alt="логотип Яндекс Практикум">
+      </div>
+        <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
         <a href="#" class="header__link">Узнать&rarr;</a>
       </p>
@@ -23,17 +24,11 @@
       <section class="description">
         <div class="two-columns">
           <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
-          <ul class="two-columns__main-text">
-            <li>
-              <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.</p>
-            </li>  
-            <li>
-              <p class="two-columns__paragraph"><span class="two-columns__span-accent">Вывод:</span>учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p>
-            </li>
-            <li>
-              <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
-            </li>
-          </ul>  
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.</p>
+            <p class="two-columns__paragraph"><span class="two-columns__span-accent">Вывод:</span>учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p>
+            <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
+          </div>  
         </div>
       </section>
       <section class="techniques">
@@ -71,12 +66,8 @@
         <h2 class="section-title">Видео нa TED</h2>
         <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
         <div class="video__iframes">
-          <div class="video__iframe">
-            <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>  
-          <div class="video__iframe">
-            <iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div> 
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section>
       <section class="oakley">
@@ -142,7 +133,7 @@
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img class="khan__book-pic" src="./images/khan-book.jpg" alt="книга The one World Schoolhouse">
-            <a href="#" class="khan__book-link">Купить книгу&rarr;</a>
+            <a href="#" class="khan__buy-link">Купить книгу&rarr;</a>
           </div>
         </div>
       </section>
@@ -191,7 +182,7 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ul>
-        <img class="kaufman__triangle" src="./images/kaufman-triangle.svg" alt="картинка треугольник">
+        <div class="kaufman__triangle"></div>
       </section>
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
@@ -207,7 +198,9 @@
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <img class="logo logo_place_footer" src="./images/logo_place_footer.svg" alt="логотип Яндекс Практикум">
+          <div class="logo">
+            <img class="logo logo_place_footer" src="./images/logo_place_footer.svg" alt="логотип Яндекс Практикум">
+          </div>
           <p class="footer__author">&copy; Виктор Абанькин</p>
         </div>
         <div class="footer__column footer__column_content_info">
@@ -221,7 +214,7 @@
           </nav>
         </div>
         <div class="footer__column footer__column_content_social">
-          <h2 class="footer__column-heading">Соцсети</h2>
+          <h4 class="footer__column-heading">Соцсети</h4>
           <nav>
             <ul class="footer__column-links">
               <li><a href="#" class="footer__column-link"><img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="иконка Facebook">Facebook</a></li>
